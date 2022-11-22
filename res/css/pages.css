@@ -1,0 +1,16 @@
+.half1 {
+	width: 50%;
+}
+
+@keyframes spin3d {
+	to {
+		transform: rotateY(359deg);
+	}
+	
+}
+
+.half1 .troll {
+	animation: spin3d 1s linear infinite;
+	position: absolute;
+	padding: 100px 0px 0px 0px;
+}
