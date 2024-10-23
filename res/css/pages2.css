@@ -1,0 +1,71 @@
+@font-face {
+    font-family: "HelveticaNeue";
+    src: url("HelveticaNeueRoman.woff"), 
+    url("HelveticaNeueMedium.otf"), url("HelveticaNeueBold.otf");
+}
+
+/* the video wasn't centering, so i had to hack .FeaturedMedia in here */
+body, .FeaturedMedia {
+    font-family: HelveticaNeue;
+    font-size: large;
+    background-color: #cd77ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.WrtLogo
+{
+    padding: 25px;
+    width: 25%;
+    height: 25%;
+} @media screen and (max-width: 600px) {
+    .WrtLogo {
+        width: 55%;
+        height: 55%;
+    }       
+}
+
+/* 
+.WertHeader {
+
+}
+*/
+
+.SocialsListTop {
+    background-color: #ddd;
+}
+
+ul {
+    /* something having 2 do with "user agent defaults" */
+    padding-inline-start: 0;
+}
+
+li {
+    list-style-type: none;
+    display: inline;
+    padding: 7px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+a { 
+    text-decoration: none; 
+    font-weight: bold;
+}
+
+.FeaturedMedia {
+    padding: 20px;
+}
+
+.FeaturedMedia marquee {
+    font-size: larger;
+    font-style: italic;
+    padding: 0px 0px 10px 0px;
+}
+
+video {
+    width: 50%;
+    height: 50%;
+}
